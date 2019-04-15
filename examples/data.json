@@ -1,0 +1,796 @@
+[
+  {
+    "id": "_dev_761364273055196638",
+    "name": "Freeboard_example",
+    "accountId": "_acc_744737176266960255",
+    "datastoreId": "default",
+    "deviceProfileId": "_dpf_761362599457548124",
+    "appId": "_app_744737176384075300",
+    "rateLimit": 300,
+    "maxNumOfDpPerFeed": 1000,
+    "status": "debug",
+    "period": 0,
+    "tags": [],
+    "annotateWithLoc": false,
+    "annotateWithMeta": false,
+    "startTime": "2016-11-24T03:09:41Z",
+    "properties": [
+      {
+        "descriptors": {
+          "id": "_prp_761364058939122718",
+          "qname": "Freeboard_example$Location"
+        },
+        "meta": {
+          "id": "_prp_761364058939122718",
+          "name": "Location",
+          "ownerId": "_dpf_761362599457548124",
+          "type": "waypoint",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "Freeboard_example$Location",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-16T11:34:28Z",
+          "dateModified": "2016-11-16T11:34:28Z"
+        },
+        "value": {
+          "mostRecent": {
+            "geo": {
+              "lat": 41.102059,
+              "lon": 29.050544
+            }
+          },
+          "time": "2016-11-14T13:00:00.000Z",
+          "stats": {
+            "count": 6
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_744737176398700889",
+          "qname": "ConnectedObject$connectionStatus"
+        },
+        "meta": {
+          "id": "_prp_744737176398700889",
+          "name": "connectionStatus",
+          "ownerId": "_dpf_744737176399071468",
+          "type": "enum",
+          "access": "protected",
+          "publish": "never",
+          "inherited": true,
+          "qualifiedName": "ConnectedObject$connectionStatus",
+          "boundaries": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "enums": {
+              "text": [
+                "offline",
+                "online"
+              ]
+            }
+          },
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": 1000000,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-10-24T12:59:49Z",
+          "dateModified": "2016-10-24T12:59:49Z"
+        },
+        "value": {
+          "stats": {
+            "count": 0
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_761363287603411661",
+          "qname": "Freeboard_example$Temperature"
+        },
+        "meta": {
+          "id": "_prp_761363287603411661",
+          "name": "Temperature",
+          "ownerId": "_dpf_761362599457548124",
+          "type": "number",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "Freeboard_example$Temperature",
+          "measurement": {
+            "type": "temperature",
+            "unit": {
+              "label": "Celsius",
+              "symbol": "Â°C"
+            }
+          },
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-16T11:32:56Z",
+          "dateModified": "2016-11-16T11:32:56Z"
+        },
+        "value": {
+          "mostRecent": 45,
+          "time": "2016-11-14T13:00:00.000Z",
+          "stats": {
+            "count": 4,
+            "min": 30.0,
+            "max": 45.0,
+            "sum": 150.0
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_744737176439170414",
+          "qname": "ConnectedObject$lastIncomingAt"
+        },
+        "meta": {
+          "id": "_prp_744737176439170414",
+          "name": "lastIncomingAt",
+          "ownerId": "_dpf_744737176399071468",
+          "type": "string",
+          "access": "protected",
+          "publish": "never",
+          "inherited": true,
+          "qualifiedName": "ConnectedObject$lastIncomingAt",
+          "boundaries": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "size": {
+              "value": 64
+            }
+          },
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": 1000000,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-10-24T12:59:49Z",
+          "dateModified": "2016-10-24T12:59:49Z"
+        },
+        "value": {
+          "mostRecent": "2016-11-16T13:24:06.478Z",
+          "time": "2016-11-16T13:24:06.478Z",
+          "stats": {
+            "count": 11
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_744737176430070462",
+          "qname": "ConnectedObject$remoteIP"
+        },
+        "meta": {
+          "id": "_prp_744737176430070462",
+          "name": "remoteIP",
+          "ownerId": "_dpf_744737176399071468",
+          "type": "string",
+          "access": "protected",
+          "publish": "never",
+          "inherited": true,
+          "qualifiedName": "ConnectedObject$remoteIP",
+          "boundaries": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "size": {
+              "value": 128
+            }
+          },
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": 1000000,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-10-24T12:59:49Z",
+          "dateModified": "2016-10-24T12:59:49Z"
+        },
+        "value": {
+          "mostRecent": "217.131.26.244",
+          "time": "2016-11-16T13:24:06.478Z",
+          "stats": {
+            "count": 11
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_744737176417577001",
+          "qname": "ConnectedObject$active"
+        },
+        "meta": {
+          "id": "_prp_744737176417577001",
+          "name": "active",
+          "ownerId": "_dpf_744737176399071468",
+          "type": "boolean",
+          "access": "protected",
+          "publish": "never",
+          "inherited": true,
+          "qualifiedName": "ConnectedObject$active",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": 1000000,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-10-24T12:59:49Z",
+          "dateModified": "2016-10-24T12:59:49Z"
+        },
+        "value": {
+          "mostRecent": true,
+          "time": "2016-11-16T13:24:06.478Z",
+          "stats": {
+            "count": 11
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_744737176449337715",
+          "qname": "ConnectedObject$lastOutgoingAt"
+        },
+        "meta": {
+          "id": "_prp_744737176449337715",
+          "name": "lastOutgoingAt",
+          "ownerId": "_dpf_744737176399071468",
+          "type": "string",
+          "access": "protected",
+          "publish": "never",
+          "inherited": true,
+          "qualifiedName": "ConnectedObject$lastOutgoingAt",
+          "boundaries": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "size": {
+              "value": 64
+            }
+          },
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": 1000000,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-10-24T12:59:49Z",
+          "dateModified": "2016-10-24T12:59:49Z"
+        },
+        "value": {
+          "mostRecent": "2016-11-16T13:24:06.477Z",
+          "time": "2016-11-16T13:24:06.478Z",
+          "stats": {
+            "count": 10
+          }
+        }
+      }
+    ],
+    "methods": [],
+    "alerts": []
+  },
+  {
+    "id": "_dev_757223186810457167",
+    "name": "dev_757223186810457167",
+    "accountId": "_acc_744737176266960255",
+    "datastoreId": "default",
+    "deviceProfileId": "_dpf_757077211089442208",
+    "appId": "_app_744737176384075300",
+    "rateLimit": 300,
+    "maxNumOfDpPerFeed": 1000,
+    "deviceClass": "sensor",
+    "vendorName": "KA Inc.",
+    "productName": "Prod-101",
+    "status": "enabled",
+    "period": 0,
+    "customIds": {
+      "sn": "InfoTect-Car-100"
+    },
+    "notes": "Maintenance required every 10,000 cycles.",
+    "tags": [
+      "infotech"
+    ],
+    "annotateWithLoc": false,
+    "annotateWithMeta": false,
+    "startTime": "2016-11-24T02:39:44Z",
+    "properties": [
+      {
+        "descriptors": {
+          "id": "_prp_759811957389445214",
+          "qname": "infotech-device-profile-1.0$harsh_break"
+        },
+        "meta": {
+          "id": "_prp_759811957389445214",
+          "name": "harsh_break",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "string",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$harsh_break",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-14T08:10:43Z",
+          "dateModified": "2016-11-14T08:10:43Z"
+        },
+        "value": {
+          "mostRecent": "34 PN 2191 SERT FREN YAPMISTIR.",
+          "time": "2016-11-24T05:24:00.000Z",
+          "stats": {
+            "count": 44
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_759811813855689017",
+          "qname": "infotech-device-profile-1.0$crash_occured"
+        },
+        "meta": {
+          "id": "_prp_759811813855689017",
+          "name": "crash_occured",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "string",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$crash_occured",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-14T08:10:26Z",
+          "dateModified": "2016-11-14T08:10:26Z"
+        },
+        "value": {
+          "mostRecent": "34 PN 2191 KAZAYA KARISTI.",
+          "time": "2016-11-23T16:34:00.000Z",
+          "stats": {
+            "count": 20
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_759811680065557596",
+          "qname": "infotech-device-profile-1.0$linkspeed_exceeded"
+        },
+        "meta": {
+          "id": "_prp_759811680065557596",
+          "name": "linkspeed_exceeded",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "string",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$linkspeed_exceeded",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-14T08:10:10Z",
+          "dateModified": "2016-11-14T08:10:10Z"
+        },
+        "value": {
+          "mostRecent": "34 PN 2191, 50 km/sa OLAN KANUNI HIZ SINIRINI 69 km/sa ILE IHLAL ETTI.",
+          "time": "2016-11-24T10:40:00.000Z",
+          "stats": {
+            "count": 366
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_759811486568889962",
+          "qname": "infotech-device-profile-1.0$harsh_acceleration"
+        },
+        "meta": {
+          "id": "_prp_759811486568889962",
+          "name": "harsh_acceleration",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "string",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$harsh_acceleration",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-14T08:09:47Z",
+          "dateModified": "2016-11-14T08:09:47Z"
+        },
+        "value": {
+          "mostRecent": "34 PN 2191 ANI HIZLANMA YAPMISTIR.",
+          "time": "2016-11-24T05:17:00.000Z",
+          "stats": {
+            "count": 102
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_759811320283492802",
+          "qname": "infotech-device-profile-1.0$ignition_on"
+        },
+        "meta": {
+          "id": "_prp_759811320283492802",
+          "name": "ignition_on",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "string",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$ignition_on",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-14T08:09:27Z",
+          "dateModified": "2016-11-14T08:09:27Z"
+        },
+        "value": {
+          "mostRecent": "34 PN 2191 CALISTIRILMISTIR.",
+          "time": "2016-11-24T10:31:00.000Z",
+          "stats": {
+            "count": 35
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_759811177743457558",
+          "qname": "infotech-device-profile-1.0$harsh_right"
+        },
+        "meta": {
+          "id": "_prp_759811177743457558",
+          "name": "harsh_right",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "string",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$harsh_right",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-14T08:09:10Z",
+          "dateModified": "2016-11-14T08:09:10Z"
+        },
+        "value": {
+          "mostRecent": "34 PN 2191 ANI SAGLAMA YAPMISTIR.",
+          "time": "2016-11-24T10:38:00.000Z",
+          "stats": {
+            "count": 234
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_759810784053526667",
+          "qname": "infotech-device-profile-1.0$harsh_left"
+        },
+        "meta": {
+          "id": "_prp_759810784053526667",
+          "name": "harsh_left",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "string",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$harsh_left",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-14T08:08:23Z",
+          "dateModified": "2016-11-14T08:08:23Z"
+        },
+        "value": {
+          "mostRecent": "34 PN 2191 ANI SOLLAMA YAPMISTIR.",
+          "time": "2016-11-24T10:38:00.000Z",
+          "stats": {
+            "count": 275
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_759810670958471969",
+          "qname": "infotech-device-profile-1.0$harsh_jump"
+        },
+        "meta": {
+          "id": "_prp_759810670958471969",
+          "name": "harsh_jump",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "string",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$harsh_jump",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-14T08:08:10Z",
+          "dateModified": "2016-11-14T08:08:10Z"
+        },
+        "value": {
+          "mostRecent": "34 PN 2191 ZIPLAMA YAPMISTIR.",
+          "time": "2016-11-24T10:42:00.000Z",
+          "stats": {
+            "count": 3219
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_759810490531925683",
+          "qname": "infotech-device-profile-1.0$ignition_off"
+        },
+        "meta": {
+          "id": "_prp_759810490531925683",
+          "name": "ignition_off",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "string",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$ignition_off",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-14T08:07:48Z",
+          "dateModified": "2016-11-14T08:07:48Z"
+        },
+        "value": {
+          "mostRecent": "34 PN 2191 DURDURULMUSTUR.",
+          "time": "2016-11-24T10:46:00.000Z",
+          "stats": {
+            "count": 22
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_757097431958914321",
+          "qname": "infotech-device-profile-1.0$location"
+        },
+        "meta": {
+          "id": "_prp_757097431958914321",
+          "name": "location",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "waypoint",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$location",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-10T14:17:26Z",
+          "dateModified": "2016-11-10T14:17:26Z"
+        },
+        "value": {
+          "mostRecent": {
+            "zone": "34 PN 2191",
+            "geo": {
+              "lat": 41.10715,
+              "lon": 29.027416
+            }
+          },
+          "time": "2016-11-24T14:21:00.000Z",
+          "stats": {
+            "count": 80039
+          }
+        }
+      },
+      {
+        "descriptors": {
+          "id": "_prp_757175586591659701",
+          "qname": "infotech-device-profile-1.0$engine"
+        },
+        "meta": {
+          "id": "_prp_757175586591659701",
+          "name": "engine",
+          "ownerId": "_dpf_757077211089442208",
+          "type": "number",
+          "access": "protected",
+          "publish": "always",
+          "inherited": false,
+          "qualifiedName": "infotech-device-profile-1.0$engine",
+          "retention": {
+            "context": {
+              "type": "default",
+              "id": "_this_"
+            },
+            "type": "historical",
+            "lifetime": "1y",
+            "capacity": -1,
+            "condition": {
+              "when": "always",
+              "value": 0
+            }
+          },
+          "dateCreated": "2016-11-10T16:52:43Z",
+          "dateModified": "2016-11-10T16:52:43Z"
+        },
+        "value": {
+          "mostRecent": 0,
+          "time": "2016-11-24T14:21:00.000Z",
+          "stats": {
+            "count": 79664,
+            "min": 0.0,
+            "max": 1.0,
+            "sum": 6210.0
+          }
+        }
+      }
+    ],
+    "methods": [],
+    "alerts": []
+  }
+]
